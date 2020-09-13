@@ -1,0 +1,22 @@
+::ng-deep .mat-icon{
+  height:48px !important;
+  width:48px !important;
+  font-size:48px !important;
+}
+
+.heading {
+  color: gray;
+  font-family: Courier, monospace;
+  margin-left: 20px;
+  margin-bottom: 30px;
+}
+
+::ng-deep .mat-card-header-text {
+  width: 100% !important;
+}
+
+.main {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}

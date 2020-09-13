@@ -1,0 +1,30 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+    [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="(isHandset$ | async) === false">
+    <div fxLayout="column" fxLayoutAlign="space-between center" class="sideNavContent">
+      <img class="profile" src="/assets/images/Ayush.jpg">
+      <h1>Ayush Maheshwari</h1>
+      <h4 class="fontColorBlue" style="margin-top: -10px;">Full Stack Developer</h4>
+      <h4 class="fontColorBlue" style="margin-top: -15px;">Bangalore</h4>
+      <mat-nav-list>
+        <a mat-list-item routerLink="home" routerLinkActive="activeLink">Home</a>
+        <a mat-list-item routerLink="about" routerLinkActive="activeLink">About</a>
+        <a mat-list-item routerLink="experience" routerLinkActive="activeLink">Experience</a>
+        <a mat-list-item routerLink="education" routerLinkActive="activeLink">Education</a>
+        <a mat-list-item routerLink="skills" routerLinkActive="activeLink">Skills</a>
+        <a mat-list-item routerLink="repositories" routerLinkActive="activeLink">Repositories</a>
+        <a mat-list-item routerLink="contact" routerLinkActive="activeLink">Contact</a>
+      </mat-nav-list>
+    </div>
+    <div style="margin-top: 20px;margin-left: 45px;">
+      <p>&copy;2020 All rights reserved.</p>
+    </div>
+  </mat-sidenav>
+  <mat-sidenav-content style="margin-top:10px">
+    <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()"
+      *ngIf="isHandset$ | async">
+      <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+    </button>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
