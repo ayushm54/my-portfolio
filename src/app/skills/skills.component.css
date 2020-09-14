@@ -1,0 +1,35 @@
+.main {
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 95vh;
+}
+
+mat-progress-bar {
+  height: 2em;
+  border-radius: 1rem;
+}
+
+.heading {
+  color: gray;
+  font-family: Courier, monospace;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+
+.subHeading {
+  color: gray;
+  font-family: Courier, monospace;
+  margin-bottom: -2px;
+}
+
+::ng-deep .mat-icon{
+  height:48px !important;
+  width:48px !important;
+  font-size:48px !important;
+}
+
+.listItems {
+  background-color: #f0f0f0;
+  border-radius: 15px;
+}
+

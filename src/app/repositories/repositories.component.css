@@ -1,0 +1,17 @@
+.errorSnackbar {
+  background-color: crimson;
+}
+
+.profile {
+  width: 200px;
+  border-radius: 91px;
+}
+
+.main {
+  margin-left: 20px;
+  margin-right: 10px;
+}
+
+mat-card {
+  margin: 10px;
+}

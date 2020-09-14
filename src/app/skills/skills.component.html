@@ -1,1 +1,99 @@
-<p>skills works!</p>
+<div fxLayout="column" class="main" fxLayoutGap="20px">
+  <mat-divider></mat-divider>
+  <h1 class="heading">My Skills</h1>
+  <mat-divider></mat-divider>
+  <h3>Here are some of my skills in which I am good to work and comfortable.</h3>
+  <div fxLayout="row" fxLayoutGap="10px">
+    <div fxFlex="50">
+      <div fxLayout="column">
+        <h2 class="subHeading">Java</h2>
+        <div style="position: relative">
+          <mat-progress-bar mode="determinate" [value]="80"></mat-progress-bar>
+          <span style="position: absolute; top: 0.5em;" [ngStyle]="{'left': '80%'}">{{80}}%</span>
+        </div>
+      </div>
+    </div>
+    <div fxFlex="50">
+      <div fxLayout="column">
+        <h2 class="subHeading">Angular 8</h2>
+        <div style="position: relative">
+          <mat-progress-bar mode="determinate" [value]="70" color="accent"></mat-progress-bar>
+          <span style="position: absolute; top: 0.5em;" [ngStyle]="{'left': '70%'}">{{70}}%</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div fxLayout="row" fxLayoutGap="10px">
+    <div fxFlex="50">
+      <div fxLayout="column">
+        <h2 class="subHeading">Database</h2>
+        <div style="position: relative">
+          <mat-progress-bar mode="determinate" [value]="50" color="warn"></mat-progress-bar>
+          <span style="position: absolute; top: 0.5em;" [ngStyle]="{'left': '50%'}">{{50}}%</span>
+        </div>
+      </div>
+    </div>
+    <div fxFlex="50">
+      <div fxLayout="column">
+        <h2 class="subHeading">HTML5,CSS3,Javascript</h2>
+        <div style="position: relative">
+          <mat-progress-bar mode="determinate" [value]="40" class="purple-progress"></mat-progress-bar>
+          <span style="position: absolute; top: 0.5em;" [ngStyle]="{'left': '40%'}">{{40}}%</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div fxLayout="row" fxLayoutGap="10px">
+    <div fxFlex="50">
+      <div fxLayout="column">
+        <h2 class="subHeading">Node Js</h2>
+        <div style="position: relative">
+          <mat-progress-bar mode="determinate" [value]="30" class="greenish-progress"></mat-progress-bar>
+          <span style="position: absolute; top: 0.5em;" [ngStyle]="{'left': '30%'}">{{30}}%</span>
+        </div>
+      </div>
+    </div>
+    <div fxFlex="50">
+      <div fxLayout="column">
+        <h2 class="subHeading">Angular Js</h2>
+        <div style="position: relative">
+          <mat-progress-bar mode="determinate" [value]="50" class="yellowish-progress"></mat-progress-bar>
+          <span style="position: absolute; top: 0.5em;" [ngStyle]="{'left': '50%'}">{{50}}%</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <mat-divider></mat-divider>
+  <div fxLayout="row" fxLayoutGap="10px">
+    <div fxFlex="50">
+      <h2 class="subHeading">Frameworks</h2>
+      <div fxLayout="column" fxLayoutGap="20px" class="listItems" style="padding: 10px;">
+        <p>• Spring Boot</p>
+        <p>• Spring JPA</p>
+        <p>• MyBatis</p>
+      </div>
+    </div>
+    <div fxFlex="50">
+      <h2 class="subHeading">Tools & IDE's</h2>
+      <div fxLayout="column" fxLayoutGap="10px" class="listItems" style="padding: 10px;">
+        <div fxLayout="row" fxLayoutGap="10px">
+          <p fxFlex="50">• Jira</p>
+          <p fxFlex="50">• Bitbucket</p>
+        </div>
+        <div fxLayout="row" fxLayoutGap="10px">
+          <p fxFlex="50">• IntellIj</p>
+          <p fxFlex="50">• Eclipse</p>
+        </div>
+        <div fxLayout="row" fxLayoutGap="10px">
+          <p fxFlex="50">• Sts</p>
+          <p fxFlex="50">• Vs Code</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div fxLayout="column" fxLayoutAlign="space-between center">
+    <a mat-icon-button color="primary" routerLink="/repositories" style="margin-top: 10px;">
+      <mat-icon>keyboard_arrow_down</mat-icon>
+    </a>
+  </div>
+</div>

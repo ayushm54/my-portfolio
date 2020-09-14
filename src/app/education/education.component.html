@@ -1,24 +1,63 @@
-<h1 class="heading">Education</h1>
-<div class="main">
-  <mat-card>
-    <mat-card-header>
-        <mat-card-title>
-          <div fxLayout="row" fxLayoutAlign="space-around center">
-            <span fxFlex="80">Devi Ahilya Vishwavidhyalaya</span>
-            <span fxFlex="20">2012 - 2016</span>
+<div fxLayout="column" class="main">
+  <h1 class="heading">Education</h1>
+  <div fxLayout="column" fxLayoutAlign="space-between center">
+    <div>
+      <mat-card style="margin-bottom: 30px;">
+        <mat-card-header>
+          <mat-card-title>
+            <div fxLayout="row" fxLayoutAlign="space-around center">
+              <span fxFlex="80">Devi Ahilya Vishwavidhyalaya</span>
+              <span fxFlex="20">2012 - 2016</span>
+            </div>
+          </mat-card-title>
+          <mat-card-subtitle>Bachelor of Engineering in Information Technology</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          <div fxLayout="column" fxLayoutAlign="space-between start" style="margin-top:20px; margin-left: 15px">
+            <p>• Completed B.E. in Information Technology wth 75.6%.</p>
+            <p>• Involved in developing the Student portal.</p>
+            <p>• Developed the official Android application for the institute as the major project.</p>
           </div>
-        </mat-card-title>
-        <mat-card-subtitle>Bachelor of Engineering in Information Technology</mat-card-subtitle>
-    </mat-card-header>
-    <mat-card-content>
-      <div fxLayout="column"fxLayoutAlign="space-between start" style="margin-top:20px; margin-left: 15px">
-        <p>• Full Stack Developer role.</p>
-        <p>• Working in Identity and Access Management.</p>
-        <p>• Working on developing the microservice architecture.</p>
-        <p>• Migrating the exisiting restful services to microservices.</p>
-        <p>• Converting angular 1.x UI components to angular 8 components.</p>
-        <p>• Involve in doing POC for implementing new plugins and technologies in project.</p>
-      </div>
-    </mat-card-content>
-  </mat-card>
+        </mat-card-content>
+      </mat-card>
+      <mat-card style="margin-bottom: 30px;">
+        <mat-card-header>
+          <mat-card-title>
+            <div fxLayout="row" fxLayoutAlign="space-around center">
+              <span fxFlex="80">Sky Heights Academy</span>
+              <span fxFlex="20">2011 - 2012</span>
+            </div>
+          </mat-card-title>
+          <mat-card-subtitle>High School Degree</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          <div fxLayout="column" fxLayoutAlign="space-between start" style="margin-top:20px; margin-left: 15px">
+            <p>• The High School was mainly focus on the bases of physics, mathematics, and chemistry.</p>
+            <p>• Completed my high school with 81.2%.</p>
+          </div>
+        </mat-card-content>
+      </mat-card>
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title>
+            <div fxLayout="row" fxLayoutAlign="space-around center">
+              <span fxFlex="80">Shree Vaishnav Academy</span>
+              <span fxFlex="20">2009 - 2010</span>
+            </div>
+          </mat-card-title>
+          <mat-card-subtitle>Secondary School Degree</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          <div fxLayout="column" fxLayoutAlign="space-between start" style="margin-top:20px; margin-left: 15px">
+            <p>• The Secondary aims at Maths , English , Science, Social Science, Litrature and Languages.</p>
+            <p>• Completed my secondary school with a CGPA of 9.2.</p>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <a mat-icon-button color="primary" routerLink="/skills" style="margin-top: 10px;">
+      <mat-icon>keyboard_arrow_down</mat-icon>
+    </a>
+  </div>
+
 </div>

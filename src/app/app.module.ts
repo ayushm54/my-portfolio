@@ -1,3 +1,4 @@
+import { LoadingSpinnerComponent } from './loading-spinner/loading-spinner.component';
 import { MaterialModule } from './material.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -15,6 +16,8 @@ import { SkillsComponent } from './skills/skills.component';
 import { RepositoriesComponent } from './repositories/repositories.component';
 import { ContactComponent } from './contact/contact.component';
 import { NgVerticalTimelineModule  } from 'ng-vertical-timeline';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -26,7 +29,8 @@ import { NgVerticalTimelineModule  } from 'ng-vertical-timeline';
     EducationComponent,
     SkillsComponent,
     RepositoriesComponent,
-    ContactComponent
+    ContactComponent,
+    LoadingSpinnerComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +38,9 @@ import { NgVerticalTimelineModule  } from 'ng-vertical-timeline';
     BrowserAnimationsModule,
     MaterialModule,
     FlexLayoutModule,
-    NgVerticalTimelineModule
+    NgVerticalTimelineModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent],

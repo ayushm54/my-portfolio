@@ -1,1 +1,24 @@
-<p>repositories works!</p>
+<div fxLayout="column" class="main" fxLayoutAlign="space-between center" *ngIf="!loading">
+  <img [src]="profile" class="profile">
+  <h1>Ayush Maheshwari</h1>
+  <h3 style="margin-top: -15px;">{{userName}}</h3>
+  <mat-divider style="margin-bottom: 30px;"></mat-divider>
+  <div fxLayout="row wrap" fxLayout.xs="column" fxLayoutGap="20px" fxLayoutAlign="space-between center">
+    <div *ngFor="let repo of repositories" fxFlex="25">
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title>
+            <a target="_blank" [href]="repo.html_url">{{repo.name}}</a>
+          </mat-card-title>
+          <mat-card-subtitle>{{repo.language}}</mat-card-subtitle>
+        </mat-card-header>
+      </mat-card>
+    </div>
+  </div>
+  <mat-divider style="margin-top: 30px;"></mat-divider>
+  <a mat-icon-button color="primary" routerLink="/contact" style="margin-top: 10px;">
+    <mat-icon>keyboard_arrow_down</mat-icon>
+  </a>
+</div>
+
+<app-loading-spinner *ngIf="loading" style="margin-left:20%;"></app-loading-spinner>
