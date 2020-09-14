@@ -16,8 +16,7 @@ export class RepositoriesComponent implements OnInit {
   constructor(private http: HttpClient, private snackBar: MatSnackBar) {}
 
   ngOnInit(): void {
-    setTimeout(() => {
-      this.http.get('https://api.github.com/users/ayushm54/repos').subscribe(
+    this.http.get('https://api.github.com/users/ayushm54/repos').subscribe(
         (res) => {
           this.repositories = res;
           this.userName = this.repositories[0].owner.login;
@@ -32,6 +31,5 @@ export class RepositoriesComponent implements OnInit {
           this.loading = false;
         }
       );
-    }, 3000);
   }
 }
