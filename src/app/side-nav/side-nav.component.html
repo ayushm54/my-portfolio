@@ -1,6 +1,6 @@
 <mat-sidenav-container class="sidenav-container">
   <mat-sidenav #drawer class="sidenav" fixedInViewport [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
-    [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="(isHandset$ | async) === false">
+    [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="(isHandset$ | async) === false" (click)="closeSidenav(drawer)">
     <div fxLayout="column" fxLayoutAlign="space-between center" class="sideNavContent">
       <img class="profile" src="/assets/images/Ayush.jpg">
       <h1>Ayush Maheshwari</h1>
